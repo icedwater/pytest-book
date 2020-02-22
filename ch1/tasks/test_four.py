@@ -26,7 +26,10 @@ def test_replace():
     """
     replace() should change passed-in fields.
     """
+    print("These strings only print() with -s switch.")
     t_before = Task("finish book", "reader", False)
+    print("Defined basis object for change.")
     t_after = t_before._replace(id=10, done=True)
+    print("Changed fields in t_before.")
     expected = Task("finish book", "reader", True, 10)
     assert t_after == expected
