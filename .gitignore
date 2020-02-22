@@ -1,0 +1,8 @@
+# virtual environment in venv
+book/
+
+# Python binaries
+*.py?
+
+# vim temps
+.*.sw?
