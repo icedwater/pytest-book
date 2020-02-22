@@ -1,7 +1,7 @@
 """
 Test the Task data type.
 """
-
+import pytest   # for using named markers
 from collections import namedtuple
 
 Task = namedtuple("Task", ["summary", "owner", "done", "id"])
@@ -15,6 +15,7 @@ def test_defaults():
     t2 = Task(None, None, False, None)
     assert t1 == t2
 
+@pytest.mark.run_this
 def test_member_access():
     """
     Check .field functionality of namedtuple.
