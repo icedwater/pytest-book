@@ -7,6 +7,12 @@ arguments such as `--tb` for traceback, the arguments for failing tests:
 provide more alternatives to `-s`. Of course, `--version` doesn't appear
 in test code either.
 
+## Marker Expressions (MARKEXPR)
+
+Marker expressions are passed to the `-m` argument to select a subset of
+tests to be run. They produce warnings in 5.3.5 unless [registered][rme]
+in `pytest.ini` first.
+
 ## Traceback styles
 
 Traceback styles provided different ways to display failing tests, which
@@ -23,3 +29,4 @@ Styles listed in the book (v3.2 or v3.0.7?) were:
 
 Some styles may have changed in pytest 5.3.5 (as of this repo).
 
+[rme]: https://docs.pytest.org/en/latest/mark.html
